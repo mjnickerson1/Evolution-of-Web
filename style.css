@@ -107,3 +107,25 @@ footer a {
 #main-title {
     color: #17324d;
 }
+
+/* Timeline table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccd6df;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #17324d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eef3f7;
+}
