@@ -1,0 +1,109 @@
+/* General website styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #29465f;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link hover effect */
+nav a:hover {
+    color: #8dd7ff;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #17324d;
+}
+
+/* Card layout using CSS Grid */
+.card-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 20px;
+}
+
+/* Class selector for cards */
+.card {
+    padding: 20px;
+    background-color: #eef3f7;
+    border: 1px solid #ccd6df;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #17324d;
+}
+
+.card a {
+    color: #005c99;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: #003b66;
+}
+
+/* Footer */
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #bce4ff;
+}
+
+/* ID selector demonstration */
+#main-title {
+    color: #17324d;
+}
