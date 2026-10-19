@@ -129,3 +129,21 @@ th {
 tr:nth-child(even) {
     background-color: #eef3f7;
 }
+
+/* Historical website screenshot */
+.web-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ccd6df;
+    border-radius: 8px;
+}
+
+/* Screenshot caption */
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
