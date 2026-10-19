@@ -130,16 +130,35 @@ tr:nth-child(even) {
     background-color: #eef3f7;
 }
 
-/* Historical website screenshot */
+
+/* Make images fit inside their sections */
 .web-image {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
     height: auto;
     margin: 20px auto;
     border: 1px solid #ccd6df;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
+/* Prevent figures from overflowing */
+figure {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Center image captions */
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+.
 /* Screenshot caption */
 figcaption {
     text-align: center;
