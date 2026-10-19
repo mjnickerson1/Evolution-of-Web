@@ -147,3 +147,26 @@ figcaption {
     color: #555;
     margin-top: 10px;
 }
+/* Keep website images within the content area */
+.web-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ccd6df;
+    border-radius: 8px;
+}
+
+/* Style image captions */
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Prevent figures from overflowing */
+figure {
+    margin: 20px 0;
+}
