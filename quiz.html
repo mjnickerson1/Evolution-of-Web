@@ -38,7 +38,8 @@
             </p>
         
 <!-- Quiz questions -->
-<form id="quizForm">
+<p id="timer">Time Remaining: 10:00</p>
+            <form id="quizForm">
 
     <!-- Question 1: Fill in the blank -->
     <div class="question">
@@ -242,11 +243,21 @@
         C. To prevent websites from using JavaScript
     </label>
 </div>
-
+<button type="button" id="submitBtn"
+        onclick="submitQuiz()">
+    Submit Quiz
+</button>
 </form>
+            <div id="results" aria-live="polite"></div>
+
+<button type="button" id="resetBtn"
+        onclick="resetQuiz()" hidden>
+    Retake Quiz
+</button>
 
         </section>
     </main>
 
+    <script src="quiz.js"></script>
 </body>
 </html>
