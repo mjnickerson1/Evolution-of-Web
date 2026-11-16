@@ -102,13 +102,18 @@ function submitQuiz() {
             ? correctAnswer.join(", ")
             : correctAnswer;
 
-        feedback +=
-            '<div class="answer-result">' +
-            '<p>Question ' + i + ': ' +
-            (isCorrect ? "Correct" : "Incorrect") +
-            ' (' + (isCorrect ? 1 : 0) + '/1 point)</p>' +
-            '<p>Correct Answer: ' + correctText + '</p>' +
-            '</div>';
+       
+// Display green for correct and red for incorrect
+const resultClass = isCorrect ? "correct" : "incorrect";
+
+feedback +=
+    '<div class="answer-result ' + resultClass + '">' +
+    '<p><strong>Question ' + i + ': ' +
+    (isCorrect ? "Correct" : "Incorrect") +
+    '</strong> (' + (isCorrect ? 1 : 0) + '/1 point)</p>' +
+    '<p>Correct Answer: ' + correctText + '</p>' +
+    '</div>';
+
     }
 
     // Calculate score and time spent
